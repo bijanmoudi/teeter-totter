@@ -28,7 +28,7 @@ A working demo can be found [here](https://bijanmoudi.github.io/teeter-totter).
 4. Showing the gameover reason to the user
 5. Prevent the game from being overed by stopping the mistaken element choice
 6. Performance monitoring
-7. Lots of bux fixes
+7. Lots of bug fixes (including functional and browser compatibility issues)
 
 ## Instructions
 
