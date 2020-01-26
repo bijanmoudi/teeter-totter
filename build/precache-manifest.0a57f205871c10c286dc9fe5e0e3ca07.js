@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94c36312f4dbc1972ac2665d3eb0199a",
+    "revision": "985021ad231de284ea90b5356a6d6e01",
     "url": "/teeter-totter/index.html"
   },
   {
-    "revision": "92da80737364c47a98b2",
+    "revision": "835478fd5103c5beac42",
     "url": "/teeter-totter/static/css/main.ed0be075.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/teeter-totter/static/js/2.a8aed66f.chunk.js"
   },
   {
-    "revision": "92da80737364c47a98b2",
-    "url": "/teeter-totter/static/js/main.9396fe55.chunk.js"
+    "revision": "835478fd5103c5beac42",
+    "url": "/teeter-totter/static/js/main.8b22d9b0.chunk.js"
   },
   {
     "revision": "340b449609c426d047f6",
