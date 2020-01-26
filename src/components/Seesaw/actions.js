@@ -65,7 +65,7 @@ export const fallEnded = () => {
 				dispatch(insertFallingElement());
 				if (
 					state.leftElements &&
-					state.leftElements.length !== state.rightElements.length
+					state.leftElements.length + 1 !== state.rightElements.length
 				) {
 					dispatch(insertRightElement());
 				}
