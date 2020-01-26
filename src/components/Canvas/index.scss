@@ -9,6 +9,7 @@
 .canvas {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	background: get-color('white');
 	background: radial-gradient(
 		circle,
