@@ -1,0 +1,61 @@
+/*=====================================
+=            Header Styles            =
+=====================================*/
+
+@import '../../assets/styles/constants/layout';
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.canvas {
+	display: flex;
+	flex-direction: column;
+	background: get-color('white');
+	background: radial-gradient(
+		circle,
+		get-color('white') 7%,
+		get-color('blue') 66%
+	);
+	overflow: hidden;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: radial-gradient(
+			circle,
+			get-color('yellow', 0.65) 0,
+			get-color('blue', 0) 25%
+		);
+	}
+	&::after {
+		content: attr(data-gameover-text);
+		z-index: 10;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		display: none;
+		padding: 1.25em;
+		border-radius: rem($border-radius);
+		transform: translate(-50%, -50%);
+		animation: fadeIn 500ms;
+		background-color: get-color('white', 0.5);
+		box-shadow: 0 rem(2) rem(3) get-color('black', 0.125);
+		font-weight: 700;
+		font-size: 7.5vh;
+		text-align: center;
+		line-height: 1;
+	}
+	.seesaw {
+		transition: filter 250ms ease;
+	}
+	&.is--ended {
+		&::after {
+			display: block;
+		}
+		.seesaw {
+			filter: blur(10px) grayscale(1);
+		}
+	}
+}

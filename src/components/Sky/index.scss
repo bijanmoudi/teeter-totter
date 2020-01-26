@@ -1,0 +1,36 @@
+/*=====================================
+=            Header Styles            =
+=====================================*/
+
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.sky {
+	flex-grow: 1;
+	& > * {
+		position: relative;
+		height: 100%;
+	}
+	&__status {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: rem(150);
+		max-width: 100%;
+		height: auto;
+		padding: em(10) em(20);
+		box-shadow: 0 0 rem(10) get-color('black', 0.1);
+		background-color: get-color('white', 0.25);
+		color: get-color('black', 0.75);
+		font-size: rem(11);
+		line-height: 1;
+		li {
+			padding-top: em(10);
+			padding-bottom: em(10);
+			& + * {
+				border-top: 1px solid get-color('black', 0.05);
+			}
+		}
+	}
+}
