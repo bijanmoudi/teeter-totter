@@ -1,0 +1,65 @@
+/*======================================
+=            Default Styles            =
+======================================*/
+
+@import '../constants/layout';
+@import '../helpers/colors';
+@import '../helpers/units';
+
+html {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smooth: always;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	background-color: get-color('white');
+	color: get-color('black');
+	font: normal normal 400 #{rem($body-font-size)}/ 140% #{$body-font-family};
+}
+
+*,
+*::before,
+*::after {
+	box-shadow: none;
+}
+
+*::selection {
+	background-color: get-color('black');
+	color: get-color('white');
+	text-shadow: none;
+}
+
+em,
+strong {
+	font-weight: 700;
+}
+
+a,
+button,
+[role='button'],
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	cursor: pointer;
+	&:active {
+		transform: scale(0.95);
+		box-shadow: none;
+	}
+}
+
+a,
+input,
+button,
+[role='button'] {
+	&:-moz-focusring {
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}

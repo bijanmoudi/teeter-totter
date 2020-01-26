@@ -1,0 +1,17 @@
+/*========================================
+=            Layout Constants            =
+========================================*/
+
+$body-font-size: 16;
+$body-font-family: 'Open Sans', sans-serif;
+$border-radius: 32;
+$seesaw-fulcrum-size: 200;
+$seesaw-beam-width: 750;
+$seesaw-beam-height: 7;
+$wrapper-width: 1200;
+$mq-breakpoints: (
+	xs: 480px,
+	sm: 768px,
+	md: 991px,
+	lg: 1280px
+);

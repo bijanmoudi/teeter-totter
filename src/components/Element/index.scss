@@ -1,0 +1,61 @@
+/*=====================================
+=            Header Styles            =
+=====================================*/
+
+@import '../../assets/styles/helpers/colors';
+@import '../../assets/styles/helpers/units';
+
+.element {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	width: 0.6em;
+	height: 0.6em;
+	border: 0.05em solid get-color('black', 0.1);
+	transform: translateY(-100%);
+	color: get-color('black', 0.8);
+	text-align: center;
+	line-height: 0.5em;
+	font-weight: 700;
+	&-wrapper {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: rem($seesaw-beam-width);
+		max-width: 100%;
+		height: rem($seesaw-beam-height);
+		margin: 0 auto;
+		&::before {
+			display: none;
+		}
+	}
+	&__inner {
+		display: block;
+		font-size: 0.3em;
+	}
+	&--right {
+		transform: translate(-50%, -100%);
+		animation: swipeIn 500ms;
+	}
+	&--circle {
+		border-radius: 50%;
+		background-color: get-color('blue', 0.7);
+	}
+	&--triangle {
+		border-width: 0 0.5em 0.5em 0.5em;
+		border-color: transparent;
+		border-bottom-color: get-color('black', 0.1);
+		.element__inner {
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translate(-50%);
+			line-height: 2.75em;
+		}
+	}
+	&--rectangle {
+		background-color: get-color('orange', 0.7);
+	}
+}
